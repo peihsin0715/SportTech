@@ -88,11 +88,14 @@ nav {
 
 /* Modal Content */
 .modal-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fefefe;
     margin: auto; /* Will not work alone for vertical centering */
     padding: 20px;
     border: 1px solid #888;
-    width: 60%; /* You can adjust this as needed */
+    width: 80%; /* You can adjust this as needed */
     height: auto;
     
     /* Centering vertically and horizontally */
@@ -126,11 +129,14 @@ nav {
 }
 
 .modal-text {
+    flex-basis: 50%;
+    padding: 20px;
     margin-top: 20px;
     text-align: center; /* Center the text within the modal */
 }
 
 #modalVideo {
+    flex-basis: 50%;
     /*max-width: 100%; /* Maximum width of the video, adjust as needed */
     max-height: 600px; /* Maximum height of the video, adjust as needed */
     width: auto; /* Maintain aspect ratio */
