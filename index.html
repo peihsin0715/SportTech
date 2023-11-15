@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sport Technology</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+        <div class="banner">
+            <h1>Sport Technology</h1>
+        </div>
+    </header>
+    <section class="video-gallery">
+        <div class="video-item" onclick="showPopup('/home/hteam/Documents/peihsin/0_back_1.mp4', 'Prediction: <br>下巴的位置：你的下巴應該向胸前垂下。<br>站姿和平衡：確保你的腳與肩同寬，這樣能擁有穩固的基礎。<br>身體旋轉：當你伸展後手拳擊時，要旋轉你的軀幹。<br><br> Ground Truth:<br>腰部沒有放輕鬆<br>身體不要動太大<br>腳可以站開一點，出拳的時候有點聳肩<br>下巴沒扣好')">
+            <video controls>
+                <source src="/home/hteam/Documents/peihsin/0_back_1.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h3>Boxing #1</h3>
+            </div>
+        </div>
+        <div class="video-item" onclick="showPopup('/home/hteam/Documents/peihsin/2_back_5.mp4', 'This is video 2 description')">
+            <video controls>
+                <source src="/home/hteam/Documents/peihsin/2_back_5.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h3>Boxing #2</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item" onclick="showPopup('/home/hteam/Documents/peihsin/3_back_5.mp4', 'This is video 3 description')">
+            <video controls>
+                <source src="/home/hteam/Documents/peihsin/3_back_5.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h3>Boxing #3</h3>
+            </div>
+        </div>
+    </section>
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="modalVideo" controls>
+            </video>
+            <div id="modalText" class="modal-text">Video description goes here</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

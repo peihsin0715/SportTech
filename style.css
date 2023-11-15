@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+header {
+    background: url('/home/hteam/Documents/peihsin/sinica/1122_demo/banner.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+}
+
+
+nav {
+    /* Add styles for your navigation links here */
+}
+
+.banner h1 {
+    text-align: center;
+    /* You can add more styles to match the design of the title in the screenshot */
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers children horizontally */
+    align-items: flex-start; /* Aligns children to the start of the cross axis */
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%; /* Sets the width to full available width */
+    max-width: 1200px; /* You can set a max-width to control the gallery width */
+    margin: 0 auto; /* Centers the .video-gallery within the body */
+}
+
+.video-item {
+    width: 340px; /* Set a fixed width for video items */
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.video-item video {
+    width: 100%;
+    display: block;
+}
+
+.video-info {
+    padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#text-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Will not work alone for vertical centering */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* You can adjust this as needed */
+    
+    /* Centering vertically and horizontally */
+    position: fixed; /* Fixed position */
+    top: 50%; /* 50% from the top */
+    left: 50%; /* 50% from the left */
+    transform: translate(-50%, -50%); /* Translate back by 50% of its own width and height */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 0.4s; /* Optional: adds a fade-in effect */
+}
+
+/* Optional: Fade-in animation */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text {
+    margin-top: 20px;
+    text-align: center; /* Center the text within the modal */
+}
+
+#modalVideo {
+    max-width: 80%; /* Maximum width of the video, adjust as needed */
+    max-height: 450px; /* Maximum height of the video, adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* To apply margin auto for centering */
+    margin: 20px auto; /* Centers the video horizontally */
+}
