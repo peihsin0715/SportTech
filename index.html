@@ -13,20 +13,20 @@
         </div>
     </header>
     <section class="video-gallery">
-        <div class="video-item" onclick="showPopup('/home/hteam/Documents/peihsin/0_back_1.mp4', 'Prediction: <br>下巴的位置：你的下巴應該向胸前垂下。<br>站姿和平衡：確保你的腳與肩同寬，這樣能擁有穩固的基礎。<br>身體旋轉：當你伸展後手拳擊時，要旋轉你的軀幹。<br><br> Ground Truth:<br>腰部沒有放輕鬆<br>身體不要動太大<br>腳可以站開一點，出拳的時候有點聳肩<br>下巴沒扣好')">
+        <div class="video-item" onclick="showPopup(this.getAttribute('data-video-url'), 'Prediction: <br>下巴的位置：你的下巴應該向胸前垂下。<br>站姿和平衡：確保你的腳與肩同寬，這樣能擁有穩固的基礎。<br>身體旋轉：當你伸展後手拳擊時，要旋轉你的軀幹。<br><br> Ground Truth:<br>腰部沒有放輕鬆<br>身體不要動太大<br>腳可以站開一點，出拳的時候有點聳肩<br>下巴沒扣好')" data-video-url="https://drive.google.com/file/d/192P_WeluR-boBSxBLEzb9fJv9BqzU8z-/preview">
             <iframe src="https://drive.google.com/file/d/192P_WeluR-boBSxBLEzb9fJv9BqzU8z-/preview" allow="autoplay"></iframe>
             <div class="video-info">
                 <h3>Boxing #1</h3>
             </div>
         </div>
-        <div class="video-item" onclick="showPopup('/home/hteam/Documents/peihsin/2_back_5.mp4', 'This is video 2 description')">
+        <div class="video-item" onclick="showPopup(this.getAttribute('data-video-url'), 'Prediction: <br> 腳部：後腳要轉動，讓腳跟抬起來，腳尖指向拳頭打出的方向。<br> 轉動：當後腳跟轉動時，臀部也應該跟著轉。<br><br> Groung Truth:<br> 上半身旋轉過多而不是髖關節<br>手臂太過僵硬<br>另外一隻手的防禦動作要在往左邊一點<br>身體放鬆一點，把拳的速度打出來，不要聳肩拳頭要扣起來，上下半身轉動要更連動<br>後腳沒有墊起來<br>髖部沒完全旋轉<br>肩膀有點僵硬')" data-video-url="https://drive.google.com/file/d/1FXVUujs7uh9K7jw2mpaWWqu5bf6C1S_B/preview">
             <iframe src="https://drive.google.com/file/d/1FXVUujs7uh9K7jw2mpaWWqu5bf6C1S_B/preview"  allow="autoplay"></iframe>
             <div class="video-info">
                 <h3>Boxing #2</h3>
             </div>
         </div>
         </div>
-        <div class="video-item" onclick="showPopup('/home/hteam/Documents/peihsin/3_back_5.mp4', 'This is video 3 description')">
+        <div class="video-item" onclick="showPopup(this.getAttribute('data-video-url'), 'Prediction:<br>後腳轉動：出拳時應轉動後腳。<br>臀部轉動：看起來你的臀部轉動比較小。嘗試在出拳時多轉動你的臀部來增加力量。你的後膝蓋也應該向內轉動，跟隨腳部的轉動。<br>重心轉移：當你伸出後手時，你的重心應該從後腳轉移到前腳。<br><br> Ground Truth:<br>後手再打長一點<br>身體過於僵硬，腰部旋轉不夠，最初站立姿勢的雙腳不夠寬<br>髖部肩膀沒旋轉<br>站太過正面<br>後腳沒墊起來<br>膝蓋站太直<br>腳站姿太小且髖關節沒旋轉')" data-video-url="https://drive.google.com/file/d/13hOWF_3-FJfdf-mRGVRBBo8ERHr5nglb/preview">
             <iframe src="https://drive.google.com/file/d/13hOWF_3-FJfdf-mRGVRBBo8ERHr5nglb/preview" allow="autoplay"></iframe>
             <div class="video-info">
                 <h3>Boxing #3</h3>
@@ -36,9 +36,8 @@
     <div id="videoModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <video id="modalVideo" controls>
-            </video>
-            <div id="modalText" class="modal-text">Video description goes here</div>
+            <iframe id="modalVideo" frameborder="0" allowfullscreen></iframe>
+            <div id="modalText" class="modal-text"></div>
         </div>
     </div>
     <script src="script.js"></script>

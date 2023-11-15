@@ -92,7 +92,8 @@ nav {
     margin: auto; /* Will not work alone for vertical centering */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* You can adjust this as needed */
+    width: 60%; /* You can adjust this as needed */
+    height: auto;
     
     /* Centering vertically and horizontally */
     position: fixed; /* Fixed position */
@@ -130,8 +131,8 @@ nav {
 }
 
 #modalVideo {
-    max-width: 80%; /* Maximum width of the video, adjust as needed */
-    max-height: 450px; /* Maximum height of the video, adjust as needed */
+    /*max-width: 100%; /* Maximum width of the video, adjust as needed */
+    max-height: 600px; /* Maximum height of the video, adjust as needed */
     width: auto; /* Maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
     display: block; /* To apply margin auto for centering */
