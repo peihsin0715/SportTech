@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: #f0f0f0;
+    font-family: 'Noto Serif TC', serif;
 }
 
 header {
@@ -32,16 +33,18 @@ nav {
     width: 100%; /* Sets the width to full available width */
     max-width: 1200px; /* You can set a max-width to control the gallery width */
     margin: 0 auto; /* Centers the .video-gallery within the body */
+    border-radius: 50px;
 }
 
 .video-item {
     width: 340px; /* Set a fixed width for video items */
     background: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 1rem;
     text-align: center;
+    padding-top: 15px;
 }
 
 .video-item video {
@@ -95,7 +98,7 @@ nav {
     margin: auto; /* Will not work alone for vertical centering */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* You can adjust this as needed */
+    width: 60%; /* You can adjust this as needed */
     height: auto;
     
     /* Centering vertically and horizontally */
@@ -137,10 +140,24 @@ nav {
 
 #modalVideo {
     flex-basis: 50%;
-    /*max-width: 100%; /* Maximum width of the video, adjust as needed */
-    max-height: 600px; /* Maximum height of the video, adjust as needed */
+    max-width: 80%; /* Maximum width of the video, adjust as needed */
     width: auto; /* Maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
     display: block; /* To apply margin auto for centering */
     margin: 20px auto; /* Centers the video horizontally */
+}
+
+.video-item:hover {
+    cursor: pointer;
+    opacity: 0.8; 
+}
+
+.video-info h3 {
+    color: #0000EE;
+    text-decoration: underline; /
+}
+
+.video-info h3:hover {
+    color: #551A8B; 
+    text-decoration: none; 
 }
