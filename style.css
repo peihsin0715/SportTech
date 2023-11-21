@@ -232,3 +232,19 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.ToggleMotion {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.Toggle{
+    font-size: 20px;
+    color: #f0f0f0;
+    align-items: center;
+    margin: 20px;
+}

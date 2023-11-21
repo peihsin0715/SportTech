@@ -28,12 +28,12 @@ function showPopup(videoSrc, description) {
     document.addEventListener('keydown', handleEscape);
 }
 
-function ToSkating(){
-    window.location.replace("./skating_align.html");
+function ToBoxing(){
+    window.location.replace("./align.html");
 }
 
 function ClickPrevious(){
-    window.location.replace("./index.html");
+    window.location.replace("./skating_instruction.html");
 }
 
 window.onclick = function(event) {
