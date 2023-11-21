@@ -22,6 +22,10 @@ function ClickNext(){
     window.location.replace("./align.html");
 }
 
+function ToSkating(){
+    window.location.replace("./skating_instruction.html");
+}
+
 window.onclick = function(event) {
     var modal = document.getElementById('videoModal');
     if (event.target == modal) {
