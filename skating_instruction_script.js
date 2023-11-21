@@ -22,8 +22,8 @@ function ClickNext(){
     window.location.replace("./skating_align.html");
 }
 
-function ToSkating(){
-    window.location.replace("./skating_instruction.html");
+function ToBoxing(){
+    window.location.replace("./index.html");
 }
 
 window.onclick = function(event) {
