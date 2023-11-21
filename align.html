@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sport Technology</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+        <div class="banner">
+            <h1>Sport Technology</h1>
+        </div>
+    </header>
+    <section class="video-gallery">
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1ssT8abiRubY0aC22pNalMbR3DlhpT4aP/preview">
+            <iframe src="https://drive.google.com/file/d/1ssT8abiRubY0aC22pNalMbR3DlhpT4aP/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #1</h3>
+            </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1P2FciSFvNim6nyEb11pM_q7SJkuC1tU0/preview">
+            <iframe src="https://drive.google.com/file/d/1P2FciSFvNim6nyEb11pM_q7SJkuC1tU0/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #2</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1w2Kh0bw4dFKuGwB_ZlifiK3soAOZT2k6/preview">
+            <iframe src="https://drive.google.com/file/d/1w2Kh0bw4dFKuGwB_ZlifiK3soAOZT2k6/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #3</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1GIXYZS0fmPxUTUSmuQtaPAc8KnO0jPeF/preview">
+            <iframe src="https://drive.google.com/file/d/1GIXYZS0fmPxUTUSmuQtaPAc8KnO0jPeF/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #4</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1QQWZmFaETiwmZ8v3__pXDo9PpljsixGe/preview">
+            <iframe src="https://drive.google.com/file/d/1QQWZmFaETiwmZ8v3__pXDo9PpljsixGe/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #5</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1L7vXLnHfnjwOxcsv6SgYaQSfdi47uPp0/preview">
+            <iframe src="https://drive.google.com/file/d/1L7vXLnHfnjwOxcsv6SgYaQSfdi47uPp0/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #6</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/111v0ZohcVIIBBYksoLxld39Xss9ou_74/preview">
+            <iframe src="https://drive.google.com/file/d/111v0ZohcVIIBBYksoLxld39Xss9ou_74/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #7</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1-NQtLFL64m31JNzKVDIwLs1WAwsK0vrG/preview">
+            <iframe src="https://drive.google.com/file/d/1-NQtLFL64m31JNzKVDIwLs1WAwsK0vrG/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #8</h3>
+            </div>
+        </div>
+        </div>
+        <div class="video-item"
+            onclick="showPopup(this.getAttribute('data-video-url'))"
+            data-video-url="https://drive.google.com/file/d/1j5H7qncYM-WoCrEbU0ILI3VWQkrC7QNL/preview">
+            <iframe src="https://drive.google.com/file/d/1j5H7qncYM-WoCrEbU0ILI3VWQkrC7QNL/preview"
+                allow="autoplay" allowfullscreen></iframe>
+            <div class="video-info">
+                <h3>Alignment #9</h3>
+            </div>
+        </div>
+    </section>
+    <div id="videoModal" class="modal">
+        <div class="align-modal-content" >
+            <span class="close">&times;</span>
+            <iframe id="AlignmentVideo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="PreviousPage" onclick="ClickPrevious()">
+
+    </div>
+    <script src="align_script.js"></script>
+</body>
+
+</html>

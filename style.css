@@ -110,6 +110,37 @@ nav {
     animation: fadeIn 0.4s; /* Optional: adds a fade-in effect */
 }
 
+.align-modal-content{
+    justify-content: space-between;
+        align-items: center;
+        background-color: #fefefe;
+        margin: auto;
+        /* Will not work alone for vertical centering */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        /* You can adjust this as needed */
+        height: 60%;
+    
+        /* Centering vertically and horizontally */
+        position: fixed;
+        /* Fixed position */
+        top: 50%;
+        /* 50% from the top */
+        left: 50%;
+        /* 50% from the left */
+        transform: translate(-50%, -50%);
+        /* Translate back by 50% of its own width and height */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.4s;
+        /* Optional: adds a fade-in effect */
+}
+
+.video {
+    height: 100%;
+    width:100%;
+}
+
 /* Optional: Fade-in animation */
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -147,6 +178,20 @@ nav {
     margin: 20px auto; /* Centers the video horizontally */
 }
 
+#AlignmentVideo {
+    flex-basis: 50%;
+    max-width: 80%;
+    /* Maximum width of the video, adjust as needed */
+    width: 80%;
+    /* Maintain aspect ratio */
+    height: 80%;
+    /* Maintain aspect ratio */
+    display: block;
+    /* To apply margin auto for centering */
+    margin: 70px auto;
+    /* Centers the video horizontally */
+}
+
 .video-item:hover {
     cursor: pointer;
     opacity: 0.8; 
@@ -160,4 +205,30 @@ nav {
 .video-info h3:hover {
     color: #551A8B; 
     text-decoration: none; 
+}
+
+.NextPage{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('next.png');
+    background-size: contain;
+    /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.PreviousPage {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('previous.png');
+    background-size: contain;
+    /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
 }
